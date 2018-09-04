@@ -5,6 +5,8 @@
   "main": "lib/index.js",
   "author": "Marc Reuter <marc@mr-web.info>",
   "license": "MIT",
+  "repository": "github:mreuter/link-to-key",
+  "homepage": "https://github.com/mreuter/link-to-key#readme",
   "keywords": [
     "keyboard",
     "key",
