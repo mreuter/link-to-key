@@ -1,5 +1,8 @@
 # link-to-key
 
+[![Build Status](https://travis-ci.com/mreuter/link-to-key.svg?branch=master)](https://travis-ci.com/mreuter/link-to-key)
+[![codecov](https://codecov.io/gh/mreuter/link-to-key/branch/master/graph/badge.svg)](https://codecov.io/gh/mreuter/link-to-key)
+
 Simply link an action to a keypress.
 
 ## Contents
