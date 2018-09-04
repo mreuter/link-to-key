@@ -1,0 +1,50 @@
+{
+  "name": "link-to-key",
+  "version": "0.1.0",
+  "description": "Simply link an action to a keypress",
+  "main": "lib/index.js",
+  "author": "Marc Reuter <marc@mr-web.info>",
+  "license": "MIT",
+  "keywords": [
+    "keyboard",
+    "key",
+    "onKeyPress",
+    "react"
+  ],
+  "scripts": {
+    "precommit": "yarn qa",
+    "prepush": "yarn qa",
+    "qa": "yarn lint && yarn flow && yarn test",
+    "install": "yarn flow-typed install && yarn flow-typed install jest",
+    "test": "jest",
+    "lint": "eslint ./src",
+    "build:clean": "rimraf ./lib",
+    "build:compile": "webpack --config config/webpack.config.js --display-modules",
+    "build": "yarn build:clean && yarn build:compile && cp src/index.js lib/index.js.flow",
+    "dev:compile": "webpack --config config/webpack.config.js --display-modules --env development",
+    "dev": "yarn build:clean && yarn dev:compile"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.2",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-compat": "^2.5.1",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prefer-object-spread": "^1.2.1",
+    "flow-bin": "^0.80.0",
+    "flow-typed": "^2.5.1",
+    "husky": "^0.14.3",
+    "jest": "^23.5.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
