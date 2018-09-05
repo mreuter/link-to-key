@@ -1,6 +1,6 @@
 {
   "name": "link-to-key",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simply link an action to a keypress",
   "main": "lib/index.js",
   "author": "Marc Reuter <marc@mr-web.info>",
