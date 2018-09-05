@@ -18,7 +18,6 @@
     "precommit": "yarn qa",
     "prepush": "yarn qa",
     "qa": "yarn lint && yarn flow && yarn test",
-    "install": "yarn flow-typed install && yarn flow-typed install jest",
     "test": "jest",
     "lint": "eslint ./src",
     "build:clean": "rimraf ./lib",
