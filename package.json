@@ -14,6 +14,8 @@
     "react"
   ],
   "scripts": {
+    "prepublishOnly": "yarn test:install",
+    "test:install": "rm -Rf tmp && mkdir tmp && cd tmp && npm init -y && TGZ=`cd .. && npm pack 2>&1 | tail -n 1` && yarn add --cache-folder ./cache ../$TGZ && cd .. && rm -Rf tmp $TGZ",
     "prepack": "yarn qa && yarn build",
     "precommit": "yarn qa",
     "prepush": "yarn qa",
